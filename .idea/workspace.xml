@@ -54,6 +54,13 @@
     <ui_properties converted="true" />
     <breakpoint_rules converted="true" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
@@ -87,11 +94,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="C:/javafx-sdk-11.0.2/lib" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Course work Sudoku" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Учеба\МИВЛГУ\ПРОГРАМНАЯ ИНЖЕНЕРИЯ\8 семестр\Разработка КПП\Курсовая работа\SudokuJava\src\fxml" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -150,8 +162,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+    <configuration name="Sudoku" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="sudoku.Sudoku" />
       <module name="SudokuJava" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\javafx-sdk-11.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
@@ -195,34 +207,37 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1494" y="1008" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607685650731">
-      <screen x="1080" y="829" width="1920" height="1050" />
+    <state x="1470" y="-112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607706511127">
+      <screen x="1081" y="-251" width="1920" height="1050" />
     </state>
-    <state x="1494" y="1008" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1018.1920/1080.829.1920.1050/1081.-251.1920.1050@1080.829.1920.1050" timestamp="1607685650731" />
-    <state x="1841" y="972" key="FileChooserDialogImpl" timestamp="1607685493281">
+    <state x="1469" y="968" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1018.1920/1080.829.1920.1050/1081.-251.1920.1050@1080.829.1920.1050" timestamp="1607689616620" />
+    <state x="1470" y="-112" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1018.1920/1080.829.1920.1050/1081.-251.1920.1050@1081.-251.1920.1050" timestamp="1607706511127" />
+    <state x="1668" y="1073" key="FileChooserDialogImpl" timestamp="1607700474391">
       <screen x="1080" y="829" width="1920" height="1050" />
     </state>
     <state x="1841" y="972" key="FileChooserDialogImpl/62.0.1018.1920/1080.829.1920.1050/1081.-251.1920.1050@1080.829.1920.1050" timestamp="1607685493281" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1607685539208">
+    <state x="1668" y="1073" key="FileChooserDialogImpl/62.0.1018.1920/1080.829.1920.1050/1081.-251.1920.1050@1081.-251.1920.1050" timestamp="1607700474391" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1607690120188">
       <screen x="1080" y="829" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/62.0.1018.1920/1080.829.1920.1050/1081.-251.1920.1050@1080.829.1920.1050" timestamp="1607685539208" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1607685539208">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/62.0.1018.1920/1080.829.1920.1050/1081.-251.1920.1050@1080.829.1920.1050" timestamp="1607690120188" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1607690120187">
       <screen x="1080" y="829" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/62.0.1018.1920/1080.829.1920.1050/1081.-251.1920.1050@1080.829.1920.1050" timestamp="1607685539208" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1607685539208">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/62.0.1018.1920/1080.829.1920.1050/1081.-251.1920.1050@1080.829.1920.1050" timestamp="1607690120187" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1607690120187">
       <screen x="1080" y="829" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/62.0.1018.1920/1080.829.1920.1050/1081.-251.1920.1050@1080.829.1920.1050" timestamp="1607685539208" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1607685539208">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/62.0.1018.1920/1080.829.1920.1050/1081.-251.1920.1050@1080.829.1920.1050" timestamp="1607690120187" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1607690120188">
       <screen x="1080" y="829" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/62.0.1018.1920/1080.829.1920.1050/1081.-251.1920.1050@1080.829.1920.1050" timestamp="1607685539208" />
-    <state x="1614" y="878" key="SettingsEditor" timestamp="1607685512954">
-      <screen x="1080" y="829" width="1920" height="1050" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/62.0.1018.1920/1080.829.1920.1050/1081.-251.1920.1050@1080.829.1920.1050" timestamp="1607690120188" />
+    <state x="1615" y="-202" key="SettingsEditor" timestamp="1607692273667">
+      <screen x="1081" y="-251" width="1920" height="1050" />
     </state>
     <state x="1614" y="878" key="SettingsEditor/62.0.1018.1920/1080.829.1920.1050/1081.-251.1920.1050@1080.829.1920.1050" timestamp="1607685512954" />
+    <state x="1615" y="-202" key="SettingsEditor/62.0.1018.1920/1080.829.1920.1050/1081.-251.1920.1050@1081.-251.1920.1050" timestamp="1607692273667" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
