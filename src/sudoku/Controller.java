@@ -19,6 +19,8 @@ import javafx.scene.text.Font;
 
 public class Controller implements Initializable {
 
+
+    /** Элементы fxml-макета */
     @FXML Button button_one;
     @FXML Button button_two;
     @FXML Button button_three;
@@ -37,25 +39,34 @@ public class Controller implements Initializable {
     @FXML RadioButton radioMedium;
     @FXML RadioButton radioHard;
 
-
+    /** Объявление объекта игрового поля*/
     GameBoard gameboard;
+
+    /** Поля класса Сontroller, название переменных несет смысловую нагрузку*/
     int player_selected_row;
     int player_selected_col;
-    private int            seconds;
+    private int seconds;
     int oldr;
     int oldc;
     int level=0;
     private long lastTime = 0;
     AnimationTimer timer;
     @Override
+
+    /**
+     * Метод создания экземпляра игрового поля
+     *
+     */
     public void initialize(URL arg0, ResourceBundle arg1) {
 
         player_selected_col=0;
         player_selected_row=0;
         btnStop.setDisable(true);
 
+        /** Получение графического контекста с холста*/
         GraphicsContext context = canvas.getGraphicsContext2D();
 
+        /** Создание экземпляра секундомера*/
         timer= new AnimationTimer() {
 
             @Override
@@ -72,6 +83,8 @@ public class Controller implements Initializable {
                 }
             }
         };
+
+        /** Обработка радиокнопок*/
         ToggleGroup tg= new ToggleGroup();
         radioEasy.setToggleGroup(tg);
         radioMedium.setToggleGroup(tg);
@@ -79,6 +92,9 @@ public class Controller implements Initializable {
         canvas.setDisable(true);
     }
 
+    /**
+     * Обработчик события клика на холсте
+     */
     public void canvasMouseClicked() {
 
         canvas.setOnMouseClicked(new EventHandler<MouseEvent>() {
@@ -99,6 +115,10 @@ public class Controller implements Initializable {
     }
 
     boolean clicked = false;
+
+    /**
+     * Обработчик события нажатия кнопки START
+     */
     public void buttonStartPressed() {
 
         if(radioEasy.isSelected()){
@@ -146,6 +166,10 @@ public class Controller implements Initializable {
         }
 
     }
+
+    /**
+     * Обработчик события нажатия кнопки STOP
+     */
     public void buttonStopPressed() {
         timer.stop();
         if(btnStop.getText().equals("RESUME")){
@@ -165,6 +189,10 @@ public class Controller implements Initializable {
 
     }
 
+    /**
+     * Метод изменения значений на игровом поле в зависимости от сложности
+     * @param a - символьное значение уровня сложности
+     */
     public void modify(char a){
         switch (level) {
             case 1:
@@ -181,16 +209,9 @@ public class Controller implements Initializable {
         }
     }
 
-    public void buttonZeroPressed() {
-
-        if(this.clicked){
-            modify('0');
-
-
-            drawOnCanvas(canvas.getGraphicsContext2D());
-        }
-
-    }
+    /**
+     * Обработчик события нажатия кнопки EXIT
+     */
     public void buttonExitPressed() {
 
         if(this.clicked){
@@ -201,7 +222,9 @@ public class Controller implements Initializable {
 
     }
 
-
+    /**
+     * Обработчики события нажатия кнопок 1-9
+     */
     public void buttonOnePressed() {
 
         if(this.clicked){
@@ -268,6 +291,10 @@ public class Controller implements Initializable {
         }
     }
 
+    /**
+     * Метод проверки решения и взаимодействия с игроком
+     * @context графический контекст с холста
+     */
     public void check(GraphicsContext context){
         switch (level) {
             case 1:
@@ -321,6 +348,10 @@ public class Controller implements Initializable {
         }
     }
 
+    /**
+     * Метод отключения игровых кнопок
+     * @check флаг необходжимости отключения
+     */
     private void disableGameMenu(boolean check){
         if(check){
             button_one.setDisable(true);
@@ -346,6 +377,11 @@ public class Controller implements Initializable {
         }
 
     }
+
+    /**
+     * Метод отключения кнопок управления и выбора отключения
+     * @check флаг необходжимости отключения
+     */
     private void disableStartComp(boolean check){
         if(check){
             btnStart.setDisable(true);
@@ -361,6 +397,11 @@ public class Controller implements Initializable {
         }
     }
 
+    /**
+     * Метод рисования на холсте
+     * Здесь происходит отрисовка и выделение ячеек
+     * @context графический контекст с холста
+     */
     private void drawOnCanvas(GraphicsContext context) {
 
         context.clearRect(0, 0, 480, 480);
